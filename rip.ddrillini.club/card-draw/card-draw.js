@@ -5,7 +5,7 @@
 
 const tournament = 'rip11';
 
-const discordWebhookUrl = 'https://dis' + 'corda' + 'pp.com/api/webho' + 'oks/51087618717882' + '7786/zBNpG-Db' + 'lnHLqfaHt8' + 'mI1gPZfKr0wEZ5p6MIr' + 'Z1fZ' + 'RJRz8jFYv' + '1IwqNIfdH5xIY-w_Ud'; // so bots don't scrape it
+const discordWebhookUrl = 'g';
 const previousStateStack = [];
 let cardObjects = [];
 let songs = [];
@@ -18,7 +18,7 @@ $(document).ready(() => {
   // load the song data
   // This may fail (eg when you're running a local copy of the site and
   // accessing via file:// urls).
-  var jqXHR = $.getJSON(`res/${tournament}/data.json`, (data) => {
+  var jqXHR = $.getJSON(`/card-draw/res/${tournament}/data.json`, (data) => {
     songs = data;
   })
 
