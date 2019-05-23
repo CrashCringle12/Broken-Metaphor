@@ -1,7 +1,7 @@
 app.controller('MainController', ['$scope', function($scope) {
   $scope.listing = [{
   series: "Sherlock",
-  series_img: "Users/Lamar%20Russ/Documents/DDM/CrashCringle12.github.io/img/sherlock.jpg",
+  series_img: "img/sherlock.jpg",
   genre: "Crime drama",
   season: 3,
   episode: "The Empty Hearse",
