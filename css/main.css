@@ -35,7 +35,7 @@ img {
     padding: 80px;
 }
 
-.main .series {
+.main .song {
     color:#0393ff;
 }
 
@@ -46,7 +46,7 @@ img {
     text-transform: uppercase;
 }
 
-.main .description {
+.main .subtitle {
     color: #fff;   
 }
 
