@@ -7,7 +7,7 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="js/vendor/angular.min.js"></script>
   </head>
-  <body ng-app="BoltNetworkApp" ng-init="firstName='Crash Cringle'">
+  <body ng-app="SongSelectApp" ng-init="firstName='Crash Cringle'">
     <div class="header">
       <div class="container">
         <img src="img/logo.svg" width="180" height="34">
@@ -17,7 +17,7 @@
     <div class="main" ng-controller="MainController">
       <div class="container">
         <div ng-repeat="show in listing" class="content">
-          <program-listing program="show"></program-listing>
+          <song-listing song="show"></song-listing>
 		  <p>Name: <input type="text" ng-model="firstName"></p>
 		  <h1>{{ firstName }} </h1>
 
@@ -61,7 +61,7 @@
 
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
-    <script src="js/directives/programListing.js"></script>
+    <script src="js/directives/songListing.js"></script>
     
   </body>
 </html>
