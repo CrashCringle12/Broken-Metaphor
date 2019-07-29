@@ -1,11 +1,22 @@
 html, body {
-    background: #000; 
-    font-family:"Oxygen"; 
-    font-weight:300; 
+    background: #161616;
+    font-family: "Oxygen";
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
 
+h1 {
+    color: #5eb4ff;
+    font-size: 36px;
+}
+h2, .h2 {
+    font-size: 30px;
+    color: #4eff51;
+}
+p {
+    color: #d9edf7;
+}
 img {
   display: block;  
   max-width: 100%;
@@ -13,11 +24,11 @@ img {
 }
 
 .header {
-    background: #000;
+    background-color: #161616;
 }
 
 .header img {
-    margin: 40px 0;
+    margin: 0px 0px;
 }
 
 .header ul {

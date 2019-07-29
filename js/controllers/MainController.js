@@ -1,20 +1,26 @@
-app.controller('MainController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', 'submissions', function ($scope, submissions) {
+    submissions.success(function (data) {
+        $scope.actualListing = data;
+    });
+
   $scope.listing = [{
-  title: "Born To Be Yours",
-  title_img: "img/sherlock.jpg",
-  genre: "Pop",
-  level: 10,
-  pack: "Cringle Haven",
-  details: "Easy song, nothing to worry about here",
-  artist: "Imagine Dragons"
-},
-                   {
-  title: "Born To Be Yours",
-  title_img: "img/sherlock.jpg",
-  genre: "Pop",
-  level: 10,
-  pack: "Cringle Haven",
-  details: "Easy song, nothing to worry about here",
-  artist: "Imagine Dragons"
-}]
+      title: "Born To Be Yours",
+      title_img: "img/BornToBeYours.png",
+      genre: "Pop",
+      level: 10,
+      length: 3.5,
+      pack: "Cringle Haven",
+      details: "Easy song, nothing to worry about here",
+      artist: "Imagine Dragons"
+    },
+    {
+      title: "Bubble Pop",
+      title_img: "img/BubblePop.png",
+      genre: "K-Pop",
+      level: 10,
+      length: 2.4,
+      pack: "AJAX's Magical Project Adventure",
+      details: "Just a test here boys",
+      artist: "No Idea"
+    }]
 }]);
