@@ -3,11 +3,10 @@ app.factory('submissions', ['$http', function ($http) {
     var getData = function () {
         return $http.get("https://crashcringle12.github.io/js/services/submissions.json")
             .then(function (response) {
-                songs = response.submissions;
+                console.log(response);
+                songs = response.data.submissions;
                 angular.forEach(songs, function (c, i) {
-                    if (i % 2 == 1) {
-                        subs.push(c);
-                    }
+                    subs.push(c);
                 });
                 return subs
             });
