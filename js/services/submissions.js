@@ -1,15 +1,15 @@
 app.factory('submissions', ['$http', function ($http) {
-    var all, odds = [];
+    var songs, subs = [];
     var getData = function () {
         return $http.get("https://crashcringle12.github.io/js/services/submissions.json")
             .then(function (response) {
-                all = response.records;
-                angular.forEach(all, function (c, i) {
+                songs = response.submissions;
+                angular.forEach(songs, function (c, i) {
                     if (i % 2 == 1) {
-                        odds.push(c);
+                        subs.push(c);
                     }
                 });
-                return odds
+                return subs
             });
     }
     return {
