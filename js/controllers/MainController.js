@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', 'submissions', function ($scope, submissions) {
+app.controller('MainController', ['$scope', 'submissions', function($scope, submissions) {
     submissions.success(function (data) {
         $scope.actualListing = data;
     });

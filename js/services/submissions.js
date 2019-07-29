@@ -1,6 +1,6 @@
 app.factory('submissions', ['$http', function ($http) {
     return
-    $http.ge('')
+    $http.get('https://crashcringle12.github.io/js/services/submissions.json')
         .success(function (data) {
             return data;
         })

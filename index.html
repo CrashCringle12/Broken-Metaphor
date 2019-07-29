@@ -8,56 +8,61 @@
     <script src="js/vendor/angular.min.js"></script>
   </head>
   <body ng-app="SongSelectApp">
-    <div class="header">
-        <img src="img/theclub.jpg" width="180" height="34">
-    </div>
-
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-        <div ng-repeat="chart in listing" class="content">
-          <song-listing song="chart"></song-listing>
-
-        </div>
+      <div class="header">
+          <img src="img/theclub.jpg" width="180" height="34">
       </div>
-    </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Bolt</h3>
-            <ul>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Help</li>
-            </ul>
+      <div class="main" ng-controller="MainController">
+          <h1>TSTT {{ actualListing.tournament }} {{actualListing}} </h1>
+          <div class="container">
+              <div ng-repeat="chart in listing" class="content">
+                  <song-listing song="chart"></song-listing>
+                  
+              </div>
           </div>
-          <div class="col-md-3">
-            <h3>More Bolt</h3>
-            <ul>
-              <li>Gift Cards</li>
-              <li>Trailers</li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3>News</h3>
-            <ul>
-              <li>Blog</li>
-              <li>Twitter</li>
-              <li>YouTube</li>
-              <li>Google+</li>
-              <li>Facebook</li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- Modules -->
-    <script src="js/app.js"></script>
 
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
-    <script src="js/directives/songListing.js"></script>
-    
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h3> Ye</h3>
+                      <ul>
+                          <li>IDK</li>
+                          <li>IDEK</li>
+                          <li>IDK</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3">
+                      <h3>Brackets</h3>
+                      <ul>
+                          <li>Good Reads I</li>
+                          <li>Good Reads I.5</li>
+                          <li>Good Reads II</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3">
+                      <h3>Contact</h3>
+                      <ul>
+                          <li>Discord</li>
+                          <li>Legacy PSU page</li>
+                          <li>Enjin</li>
+                          <li>Facebook</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Modules -->
+      <script src="js/app.js"></script>
+
+      <!-- Controllers -->
+      <script src="js/controllers/MainController.js"></script>
+      <script src="js/directives/songListing.js"></script>
+      
+      <!-- Services -->
+      <script src="js/services/submissions.js"></script>
+
+
   </body>
 </html>
