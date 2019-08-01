@@ -138,6 +138,22 @@ img {
     color: #fff;
 }
 
+.Blue {
+    transition-duration: 0.5s;
+}
+
+    .Blue:hover {
+        background-color: rgba(0, 19, 151, 0.4);
+        color: white;
+    }
+.Red {
+    background-color: rgba(250, 13, 11, 0.60);
+    color: white;
+}
+.Purple {
+    background-color: rgba(142, 27, 221, 0.66);
+    color: white;
+}
 .list-group-item span {
     color:#0393ff;
     padding:0 10px 0 0;
@@ -160,3 +176,4 @@ img {
   list-style:none;
   padding-left:0px;  
 }
+

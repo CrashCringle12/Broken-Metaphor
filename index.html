@@ -19,9 +19,13 @@
 
       <div class="main" ng-controller="MainController">
           <div class="container">
-              <div ng-repeat="chart in listing" class="content">
-                  <song-listing song="chart"></song-listing>
+              <div ng-repeat="chart in listing" class="content" ng-click="myFunction()">
+                  <div ng-class="color">
+                      {{color}} {{num}}
+                      <song-listing song="chart"></song-listing>
+                  </div>
                   
+
               </div>
           </div>
       </div>

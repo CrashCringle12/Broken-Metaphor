@@ -6,6 +6,7 @@
     "\\js",
     "\\js\\controllers",
     "\\js\\directives",
+    "\\js\\services",
     "\\js\\vendor"
   ],
   "SelectedNode": "\\js\\controllers\\MainController.js",
