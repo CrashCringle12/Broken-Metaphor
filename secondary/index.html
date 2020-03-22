@@ -12,7 +12,7 @@
       <script src="js/vendor/angular.min.js"></script>
    </head>
          <body ng-app="AnalogyForLife">
-            <div id="appMountPoint">
+            <div id="appMountPoint" ng-controller="MainController">
             <div class="basicLayout nonmemberTitle dark" lang="en-US" dir="ltr">
             <svg style="height:0;width:0;position:absolute" xmlns="http://www.w3.org/2000/svg">
                <defs id="" data-uia="">
@@ -162,8 +162,8 @@
                         </div>
                      </div>
                   </div>
-                  <div id="seasons-and-episodes-list-container">
-                     <div ng-controller="MainController" class="season season-active" data-uia="season-active">
+                  <div id="seasons-and-episodes-list-container" >
+                     <div class="season season-active" data-uia="season-active">
                         <div class="season-metadata">
                            <div class="season-release-year" data-uia="season-release-year">Season: 2020</div>
                            <p class="season-synopsis" data-uia="season-synopsis">Despite the world still being full of war, famine, pestilence, and death, people all of the world are still able to make the best of their lives. The year is 2020 and huanity proves once again that no matter how bad things get...they still know how to have a good time</p>
