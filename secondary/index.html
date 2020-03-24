@@ -5,7 +5,51 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="origin-trial" data-feature="EME Extension - Policy Check" data-expires="2018-11-26" content="Aob+++752GiUzm1RNSIkM9TINnQDxTlxz02v8hFJK/uGO2hmXnJqH8c/ZpI05b2nLsHDhGO3Ce2zXJUFQmO7jA4AAAB1eyJvcmlnaW4iOiJodHRwczovL25ldGZsaXguY29tOjQ0MyIsImZlYXR1cmUiOiJFbmNyeXB0ZWRNZWRpYUhkY3BQb2xpY3lDaGVjayIsImV4cGlyeSI6MTU0MzI0MzQyNCwiaXNTdWJkb21haW4iOnRydWV9">
       <title>LIFE | Netflix</title>
-      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           $(".episode").click(function(){
+             $("body").fadeOut(1500);
+           });
+         });
+         </script>
+<style>
+.dropbtn {
+  background-color:transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:rgb(46, 45, 45);}
+</style>
       <link type="text/css" rel="stylesheet" href="https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/0.0.1-shakti-css-v3746b1c6/css/css/less%7Ccore%7Cerror-page.less/1/wGyO3uxKi9FMN/none/true/none">
       <link type="text/css" rel="stylesheet" href="https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/0.0.1-shakti-css-v3746b1c6/css/css/less%7Csignup%7CnmContent%7CnmTitle%7CnmTitle.less/1/wGyO3uxKi9FMN/none/true/none">
       <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
@@ -108,7 +152,7 @@
                </div>
                <div class="hero-image-container">
                   <div class="hero-image hero-image-desktop" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
-                  <div class="hero-image hero-image-mobile" style="display:none;background-image:url(&quot;https://occ-0-83-2433.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaQK-2zfxzI-v0GhsGA5MsJzinTbnX63bxvlTTYx0Yr_CCN9IMlHgfg-HouAG-9HSG15gpjfh6jZxYrV8d3-ZsPTgS77.jpg?r=09a&quot;)"></div>
+                  <div class="hero-image hero-image-mobile" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
                   <picture class="hero-image-loader" data-uia="title-logo">
                      <source media="(max-width: 599px)" srcset="https://occ-0-83-2433.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaQK-2zfxzI-v0GhsGA5MsJzinTbnX63bxvlTTYx0Yr_CCN9IMlHgfg-HouAG-9HSG15gpjfh6jZxYrV8d3-ZsPTgS77.jpg?r=09a">
                      <source media="(min-width: 600px)" srcset="https://occ-0-83-2433.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQjEsMRJEgRIFAyYb_DzR8AhaqsbuztuLbf-WSuQjaGumiA-E_Q0JLpSYPZsoZWvNsjqi_TJRFVaCO6OZk2N685QZ67T.jpg?r=a48">
@@ -151,14 +195,21 @@
                      <div data-uia="season-selector+container" class="ui-select-wrapper season-selector">
                         <label for="undefined-select" class="ui-label no-display"><span class="ui-label-text"></span></label>
                         <div class="select-arrow medium">
+                           <div class="dropdown">
+                             
+                              <button class="dropbtn">Lamar Cooley</button>
+                              <div class="dropdown-content">
+                                 <a selected="">Lamar Cooley</a>
+                                 <a>Paul JKim</a>
+                                 <a>Lev Rotkin</a>
+                                 <a>Dan Gusek</a>
+                                 <a>Zachary West</a>
+                                 <a>Jacqueline Tran</a>
+                                 <a>Ali Hughes</a>
+                              </div>
+                            </div>
                            <select data-uia="season-selector" class="ui-select medium" id="undefined-select" tabindex="0">
-                              <option selected="" value="0">Lamar Cooley</option>
-                              <option value="1">Paul JKim</option>
-                              <option value="2">Lev Rotkin</option>
-                              <option value="3">Dan Gusek</option>
-                              <option value="4">Zachary West</option>
-                              <option value="5">Jacqueline Tran</option>
-                              <option value="6">Ali Hughes</option>
+   
                            </select>
                         </div>
                      </div>
