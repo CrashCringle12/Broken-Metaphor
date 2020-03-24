@@ -168,8 +168,10 @@
                            <div class="season-release-year" data-uia="season-release-year">Season: 2020</div>
                            <p class="season-synopsis" data-uia="season-synopsis">Despite the world still being full of war, famine, pestilence, and death, people all of the world are still able to make the best of their lives. The year is 2020 and huanity proves once again that no matter how bad things get...they still know how to have a good time</p>
                         </div>
-                        <div ng-repeat="epis in episodes" class="episodes-container">
+                        <div class="episodes-container">
+                           <div ng-repeat="epis in episodes">
                            <episode-listing episode="epis"></episode-listing>
+                           </div>
                         </div>
                      </div>
                      <div class="season" data-uia="season-inactive">
