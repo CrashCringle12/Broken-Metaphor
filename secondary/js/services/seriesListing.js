@@ -1,7 +1,7 @@
 app.factory('seriesListing', ['$http', function ($http) {
     var episodes, subs = [];
     var getData = function () {
-        return $http.get("https://crashcringle12.github.io/js/services/seriesListing.json")
+        return $http.get("https://crashcringle12.github.io/secondary/js/services/seriesListing.json")
             .then(function (response) {
                 console.log(response);
                 episodes = response.data.people.episodes;
