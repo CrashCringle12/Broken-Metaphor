@@ -6,37 +6,44 @@
       {
         "img": "Episode1.png",
         "title": "Squad Up",
-        "synopsis": "After a fairly quiet Thanksgiving break, Lamar returns to State College, but what he doesn't know is that Mia has a little adventure planned for him and the others when they return."
+        "synopsis": "After a fairly quiet Thanksgiving break, Lamar returns to State College, but what he doesn't know is that Mia has a little adventure planned for him and the others when they return.",
+		"link" : ""
       },
       {
         "img": "Episode2.png",
         "title": "No Boundaries",
-        "synopsis": "After a fairly quiet Thanksgiving break, Lamar returns to State College, but what he doesn't know is that Mia has a little adventure planned for him and the others when they return."
+        "synopsis": "After a fairly quiet Thanksgiving break, Lamar returns to State College, but what he doesn't know is that Mia has a little adventure planned for him and the others when they return.",
+		"link" : ""
       },
       {
         "img": "Episode3.png",
         "title": "Rumble In The Praire",
-        "synopsis": "The true tournament of Power begins. Lamar and the DDR gang head to Illionois for the Rumble in the Praire Tournamenet. How far will our heroes make it?"
+        "synopsis": "The true tournament of Power begins. Lamar and the DDR gang head to Illionois for the Rumble in the Praire Tournamenet. How far will our heroes make it?",
+		"link" : ""
       },
       {
         "img": "Episode4.png",
         "title": "The Internship: Part I",
-        "synopsis": "Lamar has obtained his first internship at Erie Insurance. He hopes this firsthand experience will teach him new skills and give new perspective on the IT Industry"
+        "synopsis": "Lamar has obtained his first internship at Erie Insurance. He hopes this firsthand experience will teach him new skills and give new perspective on the IT Industry",
+		"link" : ""
       },
       {
         "img": "Episode5.png",
         "title": "The Sunken Place",
-        "synopsis": "Wrapped in school, work, and club activities, Lamar finds himself feeling trapped. Something doesn't feel quite right and he can't put his finger on it.."
+        "synopsis": "Wrapped in school, work, and club activities, Lamar finds himself feeling trapped. Something doesn't feel quite right and he can't put his finger on it..",
+		"link" : ""
       },
       {
         "img": "Episode6.png",
         "title": "The Break Up",
-        "synopsis": "What was supposed to be an ordinary trip to Walmart goes horrible wrong when a special guest from the past returns"
+        "synopsis": "What was supposed to be an ordinary trip to Walmart goes horrible wrong when a special guest from the past returns",
+		"link": "https://www.youtube.com/watch?v=Ejv0Gk-mGko"
       },
       {
         "img": "Episode7.png",
         "title": "Where am I now?",
-        "synopsis": "Lamar ponders on his life choices. Memories of the past show up at every corner prompting an internal battle between hope and sorrow. Where are we now?"
+        "synopsis": "Lamar ponders on his life choices. Memories of the past show up at every corner prompting an internal battle between hope and sorrow. Where are we now?",
+		"link" : "https://www.youtube.com/watch?v=6VuX1qs6byU"
       }
     ]
   }
