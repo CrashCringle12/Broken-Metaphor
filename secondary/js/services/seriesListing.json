@@ -45,9 +45,33 @@
                 "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
             },
             {
+                "img": "Episode8.jpg",
+                "title": "Reboot",
+                "synopsis": "Lamar ponders on his life choices. Memories of the past show up at every corner prompting an internal battle between hope and sorrow. Where are we now?",
+                "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
+            },
+            {
+                "img": "Episode9.jpg",
+                "title": "Days of Future Past",
+                "synopsis": "The world grants",
+                "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
+            },
+            {
                 "img": "Episode10.png",
+                "title": "Finally Restored?",
+                "synopsis": "Lamar ponders on his life choices. Memories of the past show up at every corner prompting an internal battle between hope and sorrow. Where are we now?",
+                "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
+            },
+            {
+                "img": "Episode11.jpg",
                 "title": "New World Orders",
                 "synopsis": "Lamar floats endlessly in space as the world embraces the changes after the Blip",
+                "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
+            },
+            {
+                "img": "Episode12.jpg",
+                "title": "Rumble In The Praire: Part II.5",
+                "synopsis": "Boom",
                 "link": "https://www.youtube.com/watch?v=6VuX1qs6byU"
             }
         ]
