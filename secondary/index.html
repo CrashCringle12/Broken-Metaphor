@@ -165,12 +165,7 @@
                         </div>
                         <div class="hero-image-container">
                             <div class="fadein">
-                                <div id="f1" class="hero-image hero-image-desktop" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
-                                <div id="f1" class="hero-image hero-image-mobile" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
-                                <div id="f2" class="hero-image hero-image-desktop" style="display:none;background-image:url(&quot;images/CurrentCabby2.jpg&quot;)"></div>
-                                <div id="f2" class="hero-image hero-image-mobile" style="display:none;background-image:url(&quot;images/CurrentCabby2.jpg&quot;)"></div>
-                                <div id="f3" class="hero-image hero-image-desktop" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
-                                <div id="f3" class="hero-image hero-image-mobile" style="display:none;background-image:url(&quot;images/CurrentCabby.jpg&quot;)"></div>
+                                <div id="cast" class="hero-image hero-image-desktop" style="display:none;background-image:url(images/CurrentCabby.jpg);"></div>
                             </div>
                             <picture class="hero-image-loader" data-uia="title-logo">
                                 <source media="(max-width: 599px)" srcset="https://occ-0-83-2433.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaQK-2zfxzI-v0GhsGA5MsJzinTbnX63bxvlTTYx0Yr_CCN9IMlHgfg-HouAG-9HSG15gpjfh6jZxYrV8d3-ZsPTgS77.jpg?r=09a">
@@ -400,6 +395,28 @@
                     });
                 }
             }).catch(function() {});
+        }
+    </script>
+    <script>
+        function start() {
+            var rotator = document.getElementById('cast');
+            var imageDir = 'display:none;background-image:url(images/';
+            var delayInSeconds = 4;
+
+            var images = ['CurrentCabby.jpg', 'CurrentCabby2.jpg', 'CurrentCabby3.jpg', 'CurrentCabby4.jpg', 'CurrentCabby5.jpg', 'CurrentCabby6.jpg', 'CurrentCabby7.jpg'];
+
+            var num = 0;
+            var changeImage = function() {
+                var len = images.length;
+                rotator.style = imageDir + images[num++] + ')';
+                if (num == len) {
+                    num = 0;
+                }
+            };
+            setInterval(changeImage, delayInSeconds * 1000);
+        };
+        window.onload = function() {
+            start();
         }
     </script>
 

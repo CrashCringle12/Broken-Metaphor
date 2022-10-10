@@ -1,12 +1,15 @@
-html, body {
+html,
+body {
     background: #161616;
     font-family: "Oxygen";
     font-weight: 300;
     margin: 0;
     padding: 0;
 }
+
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: white;
     color: white;
     padding: 15px 32px;
@@ -18,24 +21,34 @@ html, body {
     border-radius: 2px;
     transition-duration: 0.5s;
 }
-    .button:hover {
-        background-color: #b200ff; /* Purple */
-        color: white;
-    }
-    .button2:hover {
-        background-color: #b200ff; /* Purple */
-        color: white;
-    }
-    .button3:hover {
-        background-color: #b200ff; /* Purple */
-        color: white;
-    }
-    .button4:hover {
-        background-color: #b200ff; /* Purple */
-        color: white;
-    }
+
+.button:hover {
+    background-color: #b200ff;
+    /* Purple */
+    color: white;
+}
+
+.button2:hover {
+    background-color: #b200ff;
+    /* Purple */
+    color: white;
+}
+
+.button3:hover {
+    background-color: #b200ff;
+    /* Purple */
+    color: white;
+}
+
+.button4:hover {
+    background-color: #b200ff;
+    /* Purple */
+    color: white;
+}
+
 .button2 {
-    background-color: #008CBA; /* Blue */
+    background-color: #008CBA;
+    /* Blue */
     border: white;
     color: white;
     padding: 15px 32px;
@@ -47,8 +60,10 @@ html, body {
     transition-duration: 0.5s;
     font-family: 'Roboto', sans-serif;
 }
+
 .button3 {
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
+    /* Red */
     border: white;
     color: white;
     padding: 15px 32px;
@@ -60,8 +75,10 @@ html, body {
     transition-duration: 0.5s;
     font-family: 'Roboto', sans-serif;
 }
+
 .button4 {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: white;
     color: white;
     padding: 15px 32px;
@@ -73,21 +90,26 @@ html, body {
     transition-duration: 0.5s;
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     color: #5eb4ff;
     font-size: 36px;
 }
-h2, .h2 {
+
+h2,
+.h2 {
     font-size: 30px;
     color: #4eff51;
 }
+
 p {
     color: #d9edf7;
 }
+
 img {
-  display: block;  
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .header {
@@ -99,22 +121,22 @@ img {
 }
 
 .header ul {
-  list-style: none;
+    list-style: none;
 }
 
 .header li {
-  display: inline;
-  margin-right: 30px;
+    display: inline;
+    margin-right: 30px;
 }
 
 .main {
-    background-image:url(diagmonds_@2X.png);
-    background-size:141px 142px; 
+    background-image: url(diagmonds_@2X.png);
+    background-size: 141px 142px;
     padding: 80px;
 }
 
 .main .song {
-    color:#0393ff;
+    color: #0393ff;
 }
 
 .main .episode {
@@ -125,15 +147,16 @@ img {
 }
 
 .main .subtitle {
-    color: #fff;   
+    color: #fff;
 }
 
-.main ul, .main img {
+.main ul,
+.main img {
     margin: 30px 0 0;
 }
 
 .main ul li {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border: 1px solid #0393ff;
     color: #fff;
 }
@@ -142,38 +165,100 @@ img {
     transition-duration: 0.5s;
 }
 
-    .Blue:hover {
-        background-color: rgba(0, 19, 151, 0.4);
-        color: white;
-    }
+.Blue:hover {
+    background-color: rgba(0, 19, 151, 0.4);
+    color: white;
+}
+
 .Red {
     background-color: rgba(250, 13, 11, 0.60);
     color: white;
 }
+
 .Purple {
     background-color: rgba(142, 27, 221, 0.66);
     color: white;
 }
+
 .list-group-item span {
-    color:#0393ff;
-    padding:0 10px 0 0;
+    color: #0393ff;
+    padding: 0 10px 0 0;
 }
-    
 
 .footer {
-  background:#000;
-  padding:60px 0; 
+    background: #000;
+    padding: 60px 0;
 }
 
 .footer h3 {
-  color:#fff;
-  font-size:18px;
-  font-weight:300;  
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .footer ul {
-  color:#0393ff; 
-  list-style:none;
-  padding-left:0px;  
+    color: #0393ff;
+    list-style: none;
+    padding-left: 0px;
 }
 
+.fadein img {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    53% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    53% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#f1 {
+    background-color: lightblue;
+}
+
+#f2 {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+
+#f3 {
+    -webkit-animation-delay: -2s;
+    background-color: lightgreen;
+}
