@@ -190,7 +190,7 @@
             </svg>
                         <div class="value-prop-wrapper">
                             <div class="value-prop" data-uia="value-prop">Watch all you want for free.</div>
-                            <div><button class="btn btn-get-started btn-red btn-large" type="submit" autocomplete="off" tabindex="0" role="link" data-uia="homepage-link-button">TRY 30 DAYS FREE</button></div>
+                            <div><button class="btn btn-get-started btn-red btn-large" type="submit" autocomplete="off" tabindex="0" role="link" data-uia="homepage-link-button">Enter Reality</button></div>
                         </div>
                     </div>
                 </section>
@@ -282,121 +282,6 @@
             </div>
         </div>
     </div>
-    <div>
-        <div>
-            <script type="text/javascript">
-                (function() {
-                    try {
-
-                        try {
-                            //create a new XHR request
-                            var xhrRequest = new XMLHttpRequest();
-                            var startTime;
-                            var endTime;
-
-                            function onStateChange() {
-                                //called when the XHR request object updates  status
-                                if (xhrRequest.readyState === XMLHttpRequest.DONE) {
-                                    //after its done, mark the time
-                                    endTime = encodeURIComponent(Date.now());
-
-                                    var statusCode = xhrRequest.status;
-
-                                    //assemble a logging url with the things we're interested in
-                                    var url = '/personalization/cl2/freeform/DebugEvent?source=www&action=jsSimplicityPrefetch&statusCode=' + statusCode + '&startTime=' + startTime + '&endTime=' + endTime;
-
-                                    //create an img
-                                    var img = document.createElement('img');
-                                    img.src = url;
-                                    // making sure the images are hidden, otherwise they add a small white bar at the bottom of our NMHP
-                                    img.setAttribute('style', 'display: none');
-                                    //append it to <body>, thereby making a request and logging.
-                                    document.getElementsByTagName('body')[0].appendChild(img);
-                                }
-                            }
-
-                            //record the timestamp when we open the request
-                            startTime = encodeURIComponent(Date.now());
-
-                            //open the request for the resource
-                            xhrRequest.open('GET', 'https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-v3746b1c6/js/js/signup%7Csimplicity%7CsimpleSignupClient.js/2/4W034o4n4b4p4K474E4V070q004X4z4h4G4q4Q4d4F4l4I4f4e4y4x4t4s0b024S15/l/true/none', true);
-
-                            xhrRequest.onreadystatechange = onStateChange;
-
-                            //fire!
-                            xhrRequest.send();
-                        } catch (e) {
-                            //do nothing
-                        }
-
-                    } catch (ex) {
-                        //do nothing
-                    }
-                })();
-            </script>
-            <script type="text/javascript">
-                (function() {
-                    try {
-
-                        try {
-                            //create a new XHR request
-                            var xhrRequest = new XMLHttpRequest();
-                            var startTime;
-                            var endTime;
-
-                            function onStateChange() {
-                                //called when the XHR request object updates  status
-                                if (xhrRequest.readyState === XMLHttpRequest.DONE) {
-                                    //after its done, mark the time
-                                    endTime = encodeURIComponent(Date.now());
-
-                                    var statusCode = xhrRequest.status;
-
-                                    //assemble a logging url with the things we're interested in
-                                    var url = '/personalization/cl2/freeform/DebugEvent?source=www&action=cssSimplicityPrefetch&statusCode=' + statusCode + '&startTime=' + startTime + '&endTime=' + endTime;
-
-                                    //create an img
-                                    var img = document.createElement('img');
-                                    img.src = url;
-                                    // making sure the images are hidden, otherwise they add a small white bar at the bottom of our NMHP
-                                    img.setAttribute('style', 'display: none');
-                                    //append it to <body>, thereby making a request and logging.
-                                    document.getElementsByTagName('body')[0].appendChild(img);
-                                }
-                            }
-
-                            //record the timestamp when we open the request
-                            startTime = encodeURIComponent(Date.now());
-
-                            //open the request for the resource
-                            xhrRequest.open('GET', 'https://codex.nflxext.com/%5E3.0.0/truthBundle/webui/0.0.1-shakti-css-v3746b1c6/css/css/less%7Cpages%7Csignup%7Csimplicity%7Csimplicity.less/1/wGyO3uxKi9FMN/none/true/none', true);
-
-                            xhrRequest.onreadystatechange = onStateChange;
-
-                            //fire!
-                            xhrRequest.send();
-                        } catch (e) {
-                            //do nothing
-                        }
-
-                    } catch (ex) {
-                        //do nothing
-                    }
-                })();
-            </script>
-        </div>
-    </div>
-    <script>
-        if ('serviceWorker' in navigator && navigator.serviceWorker.getRegistrations) {
-            navigator.serviceWorker.getRegistrations().then(function(registrations) {
-                if (registrations) {
-                    registrations.forEach(function(registration) {
-                        registration.unregister().catch(function() {});
-                    });
-                }
-            }).catch(function() {});
-        }
-    </script>
     <script>
         function start() {
             var rotator = document.getElementById('cast');
